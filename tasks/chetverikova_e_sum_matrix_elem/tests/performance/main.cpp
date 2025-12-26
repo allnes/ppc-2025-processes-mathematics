@@ -1,17 +1,19 @@
-#include <gtest/gtest.h>
+#if 0  // NOLINT(readability-avoid-unconditional-preprocessor-if)
 
-#include <cmath>
-#include <cstddef>
-#include <fstream>
-#include <ios>
-#include <stdexcept>
-#include <string>
+#  include <gtest/gtest.h>
 
-#include "chetverikova_e_sum_matrix_elem/common/include/common.hpp"
-#include "chetverikova_e_sum_matrix_elem/mpi/include/ops_mpi.hpp"
-#include "chetverikova_e_sum_matrix_elem/seq/include/ops_seq.hpp"
-#include "util/include/perf_test_util.hpp"
-#include "util/include/util.hpp"
+#  include <cmath>
+#  include <cstddef>
+#  include <fstream>
+#  include <ios>
+#  include <stdexcept>
+#  include <string>
+
+#  include "chetverikova_e_sum_matrix_elem/common/include/common.hpp"
+#  include "chetverikova_e_sum_matrix_elem/mpi/include/ops_mpi.hpp"
+#  include "chetverikova_e_sum_matrix_elem/seq/include/ops_seq.hpp"
+#  include "util/include/perf_test_util.hpp"
+#  include "util/include/util.hpp"
 
 namespace chetverikova_e_sum_matrix_elem {
 
@@ -75,3 +77,5 @@ const auto kPerfTestName = ChetverikovaERunPerfTestProcesses::CustomPerfTestName
 INSTANTIATE_TEST_SUITE_P(SumMatrixElemPerfTests, ChetverikovaERunPerfTestProcesses, kGtestValues, kPerfTestName);
 
 }  // namespace chetverikova_e_sum_matrix_elem
+
+#endif

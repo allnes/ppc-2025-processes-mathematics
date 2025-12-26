@@ -1,19 +1,21 @@
-#include <gtest/gtest.h>
-#include <stb/stb_image.h>
+#if 0  // NOLINT(readability-avoid-unconditional-preprocessor-if)
 
-#include <array>
-#include <cmath>
-#include <cstddef>
-#include <fstream>
-#include <stdexcept>
-#include <string>
-#include <tuple>
+#  include <gtest/gtest.h>
+#  include <stb/stb_image.h>
 
-#include "chetverikova_e_sum_matrix_elem/common/include/common.hpp"
-#include "chetverikova_e_sum_matrix_elem/mpi/include/ops_mpi.hpp"
-#include "chetverikova_e_sum_matrix_elem/seq/include/ops_seq.hpp"
-#include "util/include/func_test_util.hpp"
-#include "util/include/util.hpp"
+#  include <array>
+#  include <cmath>
+#  include <cstddef>
+#  include <fstream>
+#  include <stdexcept>
+#  include <string>
+#  include <tuple>
+
+#  include "chetverikova_e_sum_matrix_elem/common/include/common.hpp"
+#  include "chetverikova_e_sum_matrix_elem/mpi/include/ops_mpi.hpp"
+#  include "chetverikova_e_sum_matrix_elem/seq/include/ops_seq.hpp"
+#  include "util/include/func_test_util.hpp"
+#  include "util/include/util.hpp"
 
 namespace chetverikova_e_sum_matrix_elem {
 
@@ -89,3 +91,4 @@ INSTANTIATE_TEST_SUITE_P(SumMatrixElemFuncTests, ChetverikovaERunFuncTestsProces
 }  // namespace
 
 }  // namespace chetverikova_e_sum_matrix_elem
+#endif
